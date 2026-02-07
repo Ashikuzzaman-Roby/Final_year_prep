@@ -27,4 +27,12 @@ main graph alogo will be here :
             |_prim's
             |_Tropological sort 
             |_Cycle detection
-            
+
+```text
+Final-Year-Prep/
+├── Dynamic_programming
+├── Graph_Theory
+│   └── basic_graph.py
+├── README.md
+├── Recursion 
+└── Tree     
