@@ -30,3 +30,36 @@ def number_conversion(n,b):
     return number_conversion(n//b,b)+string[n%b]
 x=number_conversion(18,2)
 print(x)
+
+
+
+
+# problem 03 : 
+# Sum of Nested Lists Using Recursion
+
+# Write a Python program to sum recursion lists using recursion.
+
+# Test Data: [1, 2, [3,4], [5,6]]
+# Expected Result: 21
+
+
+nested_lst = [1, 2, [3,4], [5,6]]
+def nested_add(lst):
+    if len(lst)==0:
+        return 0
+    
+    if len(lst)==1:
+        if type(lst[0])!=int:
+            if type(lst[0])==list : 
+                return nested_add(lst[0])
+        else:
+            return lst[0]
+    else:
+        if type(lst[0])!=int:
+            if type(lst[0])==list : 
+                return nested_add(lst[0])+nested_add(lst[1::])
+            
+        else:
+            return lst[0]+nested_add(lst[1::])
+        
+print(nested_add(nested_lst))
