@@ -63,3 +63,50 @@ def nested_add(lst):
             return lst[0]+nested_add(lst[1::])
         
 print(nested_add(nested_lst))
+
+
+
+
+
+
+
+
+# code forces basics :
+
+# sheet 07 : problem solving : 
+
+# may be it is going to be  my first accepted code 
+
+# 01 : 
+# n= int(input("please input a number : "))
+n=5
+def print_recursion(n): 
+  if n>0 : 
+    print("I love Recursion")
+    print_recursion(n-1)
+  return 
+print_recursion(n)
+
+# 02 : 
+
+# n = int(input())
+def print_one_n(n):
+    if n>0:
+        print_one_n(n-1)
+        print(n)
+    return 
+print_one_n(n)
+
+
+# 03 : 
+
+# n = int(input())
+def print_n_1(n):
+    if n>0:
+        if n==1:
+            print(1)
+        else:
+            print(n,end=" ")
+            print_n_1(n-1)
+    return 
+print_n_1(n)
